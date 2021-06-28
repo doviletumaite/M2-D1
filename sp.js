@@ -30,7 +30,7 @@ console.log(sum)
     Create a variable called "random" and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
 */
 
-let random = Math.random() * 21
+let random = Math.random() * 20
   
 console.log(random)
 /* Ex.D
@@ -110,7 +110,12 @@ console.log(deleteOne("Just a string"));
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
 */
-
+function onlyLetters (){
+  string = "I have 4 dogs"
+return  string.replace(/[0-9]/g, '')
+}
+const noDigits= onlyLetters ()
+console.log(onlyLetters)
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
